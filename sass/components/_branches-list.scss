@@ -1,0 +1,44 @@
+.section--no-top-padding {
+  padding: 0 0 94px;
+}
+
+.branches-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.branch-pictures {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.branch-picture {
+  &__thumb {
+    position: relative;
+  }
+  &__image {
+    @extend %image-no-gap;
+  }
+  &__label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    font-weight: 700;
+    color: $light-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    height: 70px;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

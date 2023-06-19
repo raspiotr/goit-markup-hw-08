@@ -1,0 +1,68 @@
+.newsletter {
+  margin-left: 78px;
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $light-text-color;
+    margin-bottom: 20px;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  &__input {
+    height: 50px;
+    width: 358px;
+    padding: 15px 16px;
+    border: 1px solid $white30;
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    color: $white60;
+    transition: $transition;
+    transition-property: border-color;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $white60;
+    }
+    &:focus,
+    &:hover {
+      border-color: $active-color;
+    }
+  }
+  &__sign-button {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 28px 10px 42px;
+    color: $light-text-color;
+    background: $active-color;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: $transition;
+    transition-property: color, background-color;
+    &:hover,
+    &:focus {
+      color: $primary-text-color;
+      background: $button-background-color;
+    }
+  }
+  &__sign-button-icon {
+    fill: currentColor;
+  }
+}

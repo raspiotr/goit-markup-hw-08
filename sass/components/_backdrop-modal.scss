@@ -1,0 +1,56 @@
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.backdrop {
+  cursor: not-allowed;
+  display: flex;
+  background-color: $black20;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: scale(1);
+  transition: $transition;
+  transition-property: visibility, opacity, transform;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  margin: auto;
+  cursor: auto;
+  background: $light-text-color;
+  box-shadow: 0px 1px 3px $black12, 0px 1px 1px $black14, 0px 2px 1px $black20;
+  border-radius: 4px;
+  padding: 40px;
+  &__close {
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: $light-text-color;
+    border-width: 0;
+  }
+  &__close-icon-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $light-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: $black10;
+    border-width: 1px;
+    border-style: solid;
+  }
+  &__close-icon-content {
+    fill: black;
+  }
+}

@@ -1,0 +1,30 @@
+.work-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+  &__icon-box {
+    background-color: $button-background-color;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+}

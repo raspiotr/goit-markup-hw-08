@@ -1,0 +1,31 @@
+.sort-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 8px;
+  margin: 0 0 50px;
+  justify-content: center;
+  &__button {
+    background: $button-background-color;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition: $transition;
+    transition-property: color, background-color, box-shadow;
+    &:hover,
+    &:focus {
+      color: $light-text-color;
+      background: $active-color;
+      box-shadow: 0px 3px 1px $black10, 0px 1px 2px $black8,
+        0px 2px 2px $black12;
+    }
+  }
+}

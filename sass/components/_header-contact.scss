@@ -1,0 +1,33 @@
+.header-contact {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: auto;
+  &__item {
+    &:not(:last-child) {
+      padding: 0;
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      color: $active-color;
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

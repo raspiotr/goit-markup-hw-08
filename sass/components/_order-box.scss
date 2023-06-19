@@ -1,0 +1,51 @@
+.order-box {
+  padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      transparent
+    ),
+    url("../images/order-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  &__text {
+    text-align: center;
+    width: 696px;
+    margin: 0 auto 30px;
+    color: $light-text-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &__button {
+    min-width: 200px;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 41px;
+    color: $light-text-color;
+    background: $active-color;
+    box-shadow: 0px 4px 4px $black15;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: $transition;
+    transition-property: color, background-color;
+    &:hover,
+    &:focus {
+      color: $primary-text-color;
+      background: $button-background-color;
+    }
+  }
+}

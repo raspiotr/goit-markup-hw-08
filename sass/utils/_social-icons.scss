@@ -1,0 +1,21 @@
+.social-icon {
+  &__box {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $icons-light-color;
+    transition: $transition;
+    transition-property: color, background-color;
+    &:hover,
+    &:focus {
+      background-color: $active-color;
+      color: $light-text-color;
+    }
+  }
+  &__content {
+    fill: currentColor;
+  }
+}

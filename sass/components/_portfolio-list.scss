@@ -1,0 +1,79 @@
+.portfolio-box {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-card {
+  &__link {
+    display: block;
+    text-decoration: inherit;
+    font-style: inherit;
+    color: inherit;
+    transition: $transition;
+    transition-property: box-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px $black12, 0px 4px 4px $black6,
+        1px 4px 6px $black16;
+      & .portfolio-card__image-overlay {
+        transform: translateY(0);
+      }
+    }
+  }
+  &__figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  &__image {
+    @extend %image-no-gap;
+    margin: 0;
+  }
+  &__image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: $transition;
+    transition-property: transform;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__image-overlay-text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $light-text-color;
+    display: block;
+  }
+  &__text-box {
+    padding: 20px 0 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  &__text-box-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  &__text-box-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+}

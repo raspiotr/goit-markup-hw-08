@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+%link {
+  text-decoration: inherit;
+  font-style: inherit;
+  color: inherit;
+  transition: $transition;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+%image-no-gap {
+  display: block;
+}

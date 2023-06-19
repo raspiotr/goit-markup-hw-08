@@ -1,0 +1,74 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-dark;
+}
+
+.footer-logo {
+  @extend %link;
+  @extend .main-navigation__link--logo;
+  display: block;
+  margin-bottom: 20px;
+  color: $light-text-color;
+  &:hover,
+  &:focus {
+    color: $light-text-color;
+  }
+  &--highlight {
+    color: $active-color;
+  }
+}
+
+.address-box {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  list-style-type: none;
+  padding-left: 0;
+  font-style: normal;
+  color: $light-text-color;
+  &__link {
+    @extend %link;
+    &--darker {
+      color: $white60;
+    }
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.join-us-box {
+  margin-left: 70px;
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $light-text-color;
+    margin-bottom: 20px;
+  }
+  &__icons {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  &__icon-box {
+    @extend .social-icon__box;
+    background-color: $white10;
+    color: $light-text-color;
+    &:hover,
+    :focus {
+      background-color: $active-color;
+    }
+  }
+  &__icon-content {
+    @extend .social-icon__content;
+    fill: currentColor;
+  }
+}
