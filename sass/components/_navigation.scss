@@ -1,8 +1,11 @@
 .main-navigation {
   display: flex;
-  gap: 93px;
+  gap: 83px;
   align-items: center;
   padding: 0;
+  @media (min-width: $desktop) {
+    gap: 93px;
+  }
   &__link {
     @extend %link;
     &--current {
@@ -25,9 +28,13 @@
     }
     &--logo {
       font-family: $font-family-logo;
-      font-size: 26px;
-      line-height: 1.19;
+      font-size: 24px;
+      line-height: 1.17;
       letter-spacing: 0.03em;
+      @media (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+      }
       &:hover,
       &:focus {
         color: currentColor;
@@ -50,6 +57,9 @@
   }
   &__item:not(:last-child) {
     padding: 0;
-    margin-right: 43px;
+    margin-right: 57px;
+    @media (min-width: $desktop) {
+      margin-right: 43px;
+    }
   }
 }

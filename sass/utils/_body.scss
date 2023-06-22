@@ -15,7 +15,20 @@ ul {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+
+.section--work-list {
+  padding: 60px 0;
+  @media (min-width: $tablet) {
+    padding-bottom: 45px;
+  }
+  @media (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 %image-no-gap {

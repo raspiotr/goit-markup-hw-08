@@ -1,5 +1,9 @@
 .section--no-top-padding {
-  padding: 0 0 94px;
+  display: none;
+  @media (min-width: $desktop) {
+    display: contents;
+    padding: 0 0 94px;
+  }
 }
 
 .branches-title {
