@@ -34,6 +34,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
   }
   &__text {
     font-size: 14px;

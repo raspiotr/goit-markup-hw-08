@@ -1,6 +1,6 @@
 .container {
   min-width: 320px;
-  max-width: 480px;
+  max-width: $mobile;
   margin: 0 auto;
   padding: 0 15px;
   @media (min-width: $tablet) {
@@ -12,6 +12,7 @@
   &--header-box {
     display: flex;
     align-items: center;
+    position: relative;
   }
   &--footer-box {
     display: flex;

@@ -5,10 +5,13 @@
   &__title {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 12px;
+    @media (min-width: $desktop) {
+      line-height: 1.15;
+    }
   }
   &__label {
     font-size: 12px;
@@ -35,12 +38,16 @@
     outline: none;
     background-color: transparent;
     color: var(--primary-text-color);
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     transition: $transition;
     transition-property: border-color;
+    @media (min-width: $desktop) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
     &--custom-name {
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg id='person-black-18dp 1' clip-path='url(%23clip0_4082_869)'%3e%3cpath id='Vector' d='M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z' fill='%23212121'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_4082_869'%3e%3crect width='18' height='18' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
       transition: $transition;
@@ -81,16 +88,24 @@
     outline: none;
     background-color: transparent;
     color: $primary-text-color;
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     resize: none;
     transition: $transition;
     transition-property: border-color;
-    &::placeholder {
+    @media (min-width: $desktop) {
       font-size: 12px;
       line-height: 1.17;
+    }
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
+      @media (min-width: $desktop) {
+        font-size: 12px;
+        line-height: 1.17;
+      }
     }
     &:focus,
     &:hover {
@@ -103,12 +118,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 8px;
   margin-bottom: 30px;
   &--hidden {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    min-width: 16px;
   }
   &--custom {
     width: 16px;
@@ -119,10 +135,14 @@
     }
   }
   &__label {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
+    @media (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   &__link {
     color: $active-color;

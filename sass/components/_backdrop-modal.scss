@@ -22,14 +22,21 @@
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: calc(100vw - 20px);
+  height: 609px;
   margin: auto;
   cursor: auto;
   background: $light-text-color;
   box-shadow: 0px 1px 3px $black12, 0px 1px 1px $black14, 0px 2px 1px $black20;
   border-radius: 4px;
   padding: 40px;
+  @media (min-width: $mobile) {
+    width: 450px;
+  }
+  @media (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
   &__close {
     padding: 0;
     position: absolute;

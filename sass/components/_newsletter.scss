@@ -10,6 +10,7 @@
     color: $light-text-color;
     margin-bottom: 20px;
     text-align: center;
+
     @media (min-width: $desktop) {
       text-align: left;
     }
@@ -26,7 +27,7 @@
   }
   &__input {
     height: 50px;
-    width: 450px;
+    width: calc(100vw - 30px);
     padding: 15px 16px;
     border: 1px solid $white30;
     border-radius: 4px;
@@ -35,6 +36,9 @@
     color: $white60;
     transition: $transition;
     transition-property: border-color;
+    @media (min-width: $mobile) {
+      max-width: 450px;
+    }
     @media (min-width: $desktop) {
       max-width: 358px;
     }
