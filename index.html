@@ -82,7 +82,7 @@
           </li>
         </ul>
         <button
-          class="menu-toggle js-open-menu"
+          class="mobile-menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
           type="button"
@@ -91,43 +91,120 @@
             <use href="./images/icons.svg#icon-menu_40px"></use>
           </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-container__close js-close-menu">
-            <svg class="menu-container__close-image" width="40" height="40">
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <button class="mobile-menu-container__close js-close-menu">
+            <svg
+              class="mobile-menu-container__close-image"
+              width="40"
+              height="40"
+            >
               <use href="./images/icons.svg#icon-close_40px"></use>
             </svg>
           </button>
-
-          <ul class="mobile-menu">
-            <li class="mobile-menu__item">
-              <a
-                class="mobile-menu__link main-navigation__link--current"
-                href="./index.html"
-                >Agencja</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#kontakt">Kontakt</a>
-            </li>
-          </ul>
-          <ul class="mobile-menu-contact">
-            <li class="mobile-menu-contact__item">
-              <a
-                class="mobile-menu-contact__link"
-                href="mailto:info@devstudio.com"
-              >
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile-menu-contact__item">
-              <a class="mobile-menu-contact__link" href="tel:+48111111111">
-                +48 111 111 111</a
-              >
-            </li>
-          </ul>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__nav-item">
+                <a
+                  class="mobile-menu__nav-link mobile-menu__nav-link--current"
+                  href="./index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="#kontakt">Kontakt</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__bottom">
+              <ul class="mobile-menu__contact">
+                <li class="mobile-menu__contact-item">
+                  <a class="mobile-menu__contact-link" href="tel:+48111111111">
+                    +48 111 111 111</a
+                  >
+                </li>
+                <li class="mobile-menu__contact-item">
+                  <a
+                    class="mobile-menu__contact-link mobile-menu__contact-link--mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__social">
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href>Instagram</a>
+                </li>
+                <li>
+                  <svg
+                    width="1"
+                    height="22"
+                    viewBox="0 0 1 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      id="Line 1"
+                      x1="0.5"
+                      x2="0.5"
+                      y2="22"
+                      stroke="#212121"
+                      stroke-opacity="0.2"
+                    />
+                  </svg>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href>Twitter</a>
+                </li>
+                <li>
+                  <svg
+                    width="1"
+                    height="22"
+                    viewBox="0 0 1 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      id="Line 1"
+                      x1="0.5"
+                      x2="0.5"
+                      y2="22"
+                      stroke="#212121"
+                      stroke-opacity="0.2"
+                    />
+                  </svg>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href>Facebook</a>
+                </li>
+                <li>
+                  <svg
+                    width="1"
+                    height="22"
+                    viewBox="0 0 1 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      id="Line 1"
+                      x1="0.5"
+                      x2="0.5"
+                      y2="22"
+                      stroke="#212121"
+                      stroke-opacity="0.2"
+                    />
+                  </svg>
+                </li>
+                <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href>LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -248,8 +325,6 @@
                 class="team-card__image"
                 src="images/team1.jpg"
                 alt="Mężczyzna w okularach i z brodą, w bordowej koszuli. Uśmiecha się."
-                width="270"
-                height="260"
               />
               <div class="team-card__name-box">
                 <h3 class="team-card__name">John Doe</h3>
@@ -291,8 +366,6 @@
                 class="team-card__image"
                 src="images/team2.jpg"
                 alt="Kobieta, blondynka, w okularach, w czarnej marynarce. Uśmiecha się"
-                width="270"
-                height="260"
               />
               <div class="team-card__name-box">
                 <h3 class="team-card__name">John Doe</h3>
@@ -334,8 +407,6 @@
                 class="team-card__image"
                 src="images/team3.jpg"
                 alt="Młody mężczyzna w białej koszuli. Uśmiecha się."
-                width="270"
-                height="260"
               />
               <div class="team-card__name-box">
                 <h3 class="team-card__name">John Doe</h3>
@@ -377,8 +448,6 @@
                 class="team-card__image"
                 src="images/team4.jpg"
                 alt="Mężczyzna w okularach, z brodą, w czarnej koszulce, lekko uśmiecha się."
-                width="270"
-                height="260"
               />
               <div class="team-card__name-box">
                 <h3 class="team-card__name">John Doe</h3>

@@ -5,7 +5,7 @@
   }
 }
 
-.menu-toggle {
+.mobile-menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -28,15 +28,12 @@
   position: absolute;
   top: -6px;
   right: 15px;
-}
-
-@media (min-width: $tablet) {
-  .menu-toggle {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
 
-.menu-container {
+.mobile-menu-container {
   width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -44,7 +41,7 @@
   left: 0px;
   height: 100vh;
   padding: 48px 40px;
-  background-color: red;
+  background-color: $light-text-color;
   z-index: 999;
   transform: translateY(calc(-100% - 24px));
   transition: $transition;
@@ -70,18 +67,84 @@
   }
 }
 
-.menu-container.is-open {
+.mobile-menu-container.is-open {
   transform: translateY(-16px);
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  &__link {
-    display: block;
-    padding: 10px;
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+  }
+  &__nav-link {
+    @extend %link;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
     color: $primary-text-color;
-    text-decoration: none;
+    font-weight: 500;
+    transition: $transition;
+    transition-property: color;
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+    &--current {
+      color: $active-color;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 64px;
+  }
+  &__contact-link {
+    @extend %link;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    font-weight: 500;
+    transition: $transition;
+    transition-property: color;
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+    &--mail {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  &__social-link {
+    @extend %link;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    font-weight: 500;
+    transition: $transition;
+    transition-property: color;
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+  }
+  &__bottom {
+    position: absolute;
+    bottom: 48px;
   }
 }
