@@ -40,10 +40,12 @@
   @media (min-width: $desktop) {
     width: calc((100% - 90px) / 4);
   }
+  &__source {
+    max-width: 100%;
+  }
   &__image {
     @extend %image-no-gap;
-    width: 450px;
-    height: 460px;
+    max-width: 100%;
     @media (min-width: $tablet) {
       width: 354px;
       height: 374px;
