@@ -10,6 +10,10 @@ footer {
   display: block;
   margin-bottom: 20px;
   color: $light-text-color;
+  text-align: center;
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
   &:hover,
   &:focus {
     color: $light-text-color;
@@ -27,6 +31,10 @@ footer {
   padding-left: 0;
   font-style: normal;
   color: $light-text-color;
+  text-align: center;
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
   &__link {
     @extend %link;
     &--darker {
@@ -38,12 +46,18 @@ footer {
     }
   }
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
 }
 
 .join-us-box {
-  margin-left: 70px;
+  text-align: center;
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
   &__text {
     text-transform: uppercase;
     font-weight: 700;
@@ -57,6 +71,7 @@ footer {
     list-style: none;
     display: flex;
     gap: 10px;
+    justify-content: center;
   }
   &__icon-box {
     @extend .social-icon__box;

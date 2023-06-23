@@ -1,8 +1,9 @@
 .section--no-top-padding {
+  padding-top: 0;
   display: none;
   @media (min-width: $desktop) {
-    display: contents;
-    padding: 0 0 94px;
+    display: block;
+    padding-bottom: 94px;
   }
 }
 
