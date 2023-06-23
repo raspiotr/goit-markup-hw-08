@@ -27,7 +27,7 @@
   }
   position: absolute;
   top: -6px;
-  right: 0;
+  right: 15px;
 }
 
 @media (min-width: $tablet) {
@@ -37,15 +37,16 @@
 }
 
 .menu-container {
+  width: 100%;
+  margin: 0 auto;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100vw;
+  left: 0px;
   height: 100vh;
   padding: 48px 40px;
-  background-color: $light-text-color;
+  background-color: red;
   z-index: 999;
-  transform: translateY(-100%);
+  transform: translateY(calc(-100% - 24px));
   transition: $transition;
   transition-property: transform;
   &__close {
@@ -70,7 +71,7 @@
 }
 
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translateY(-16px);
 }
 
 .mobile-menu {
